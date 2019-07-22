@@ -5,15 +5,9 @@
          version="4.0">
 
     <!-- add servlet -->
-    <servlet>
-        <servlet-name>TasksController1</servlet-name>
-        <servlet-class>app.servlets.TasksController</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>TasksController1</servlet-name>
-        <url-pattern>/list</url-pattern>
-    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/list</welcome-file>
+    </welcome-file-list>
 
     <servlet>
         <servlet-name>TasksController</servlet-name>
