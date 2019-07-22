@@ -18,7 +18,7 @@ public class TaskDAO implements DaoTask {
         return SingletonHelper.INSTANCE;
     }
 
-    private final String DATABASE_URL = "postgres://lnzzlviqcbhhxh:14a418bd1fcb4b52516f5ed28ca6cfe61fd1947eeb1b6fac1648e27b1c0cd650@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dc7aha6528ehqp?sslmode=require";
+    private final String DATABASE_URL = "jdbc:postgresql://ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dc7aha6528ehqp?sslmode=require";
     private final String USER = "lnzzlviqcbhhxh";
     private final String PASS = "14a418bd1fcb4b52516f5ed28ca6cfe61fd1947eeb1b6fac1648e27b1c0cd650";
     private Connection connect() throws SQLException {
