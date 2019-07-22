@@ -21,7 +21,7 @@
 
 <div class="container">
     <form action="insert" method="post">
-        <button class="start" type="submit">Let's GO!!!</button>
+        <button type="submit">Let's GO!!!</button>
     </form>
 </div>
 </body>
