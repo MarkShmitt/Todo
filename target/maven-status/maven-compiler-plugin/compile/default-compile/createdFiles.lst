@@ -1,0 +1,8 @@
+launch\Main.class
+app\servlets\TasksController.class
+app\DAO\TaskDAO$1.class
+app\DAO\TaskDAO.class
+app\entities\Task.class
+app\DAO\DAO.class
+app\DAO\DaoTask.class
+app\DAO\TaskDAO$SingletonHelper.class
