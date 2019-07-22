@@ -6,6 +6,16 @@
 
     <!-- add servlet -->
     <servlet>
+        <servlet-name>TasksController1</servlet-name>
+        <servlet-class>app.servlets.TasksController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TasksController1</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>TasksController</servlet-name>
         <servlet-class>app.servlets.TasksController</servlet-class>
     </servlet>
