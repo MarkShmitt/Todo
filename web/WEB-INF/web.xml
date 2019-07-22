@@ -12,7 +12,7 @@
 
     <servlet-mapping>
         <servlet-name>TasksController</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/list</url-pattern>
     </servlet-mapping>
 
 </web-app>
