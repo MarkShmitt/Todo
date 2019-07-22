@@ -20,13 +20,11 @@
     To be continued...</div>
 
 <div class="container">
-    <c:if test="${task == null}">
-        <form action="insert" method="post">
-            <label for="new-task">Add Item</label>
-            <input id="new-task" type="text" name="title">
-            <button type="submit">Add</button>
-        </form>
-    </c:if>
+    <form action="insert" method="post">
+        <label for="new-task">Add Item</label>
+        <input id="new-task" type="text" name="title">
+        <button type="submit">Add</button>
+    </form>
 
     <h3>Todo</h3>
     <ul id="incomplete-tasks">
