@@ -1,15 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: user
-  Date: 16.07.2019
-  Time: 21:10
+  Date: 22.07.2019
+  Time: 17:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Todo App</title>
+    <title>START</title>
     <style type="text/css">
         <%@include file="WEB-INF/css/style.css"%>
     </style>
@@ -22,52 +21,11 @@
 
 <div class="container">
     <form action="insert" method="post">
-        <label for="new-task">Add Item</label>
-        <input id="new-task" type="text" name="title">
-        <button type="submit">Add</button>
+        <button type="submit">Let's GO!!!</button>
     </form>
-
-    <h3>Todo</h3>
-    <ul id="incomplete-tasks">
-        <c:forEach var="task" items="${tasks}">
-            <c:if test="${task.completeFlag == false}">
-                <li class="editMode">
-                    <form action="update" method="post">
-                        <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
-                        <input type="checkbox" name="completeFlag" value="true"/>
-                        <input type="text" name="title" value="<c:out value="${task.title}" />" />
-                        <label><c:out value="${task.title}" /></label>
-                        <button class="edit" type="submit">Edit</button>
-                    </form>
-                    <form action="delete" method="post">
-                        <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
-                        <button class="delete" type="submit">Delete</button>
-                    </form>
-                </li>
-            </c:if>
-        </c:forEach>
-    </ul>
-
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-        <c:forEach var="task" items="${tasks}">
-            <c:if test="${task.completeFlag == true}">
-                <li>
-                    <form action="update" method="post">
-                        <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
-                        <input type="checkbox" name="completeFlag" value="true" checked/>
-                        <input type="text" name="title" value="<c:out value="${task.title}" />" />
-                        <label><c:out value="${task.title}" /></label>
-                        <button class="edit" type="submit">Edit</button>
-                    </form>
-                    <form action="delete" method="post">
-                        <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
-                        <button class="delete" type="submit">Delete</button>
-                    </form>
-                </li>
-            </c:if>
-        </c:forEach>
-    </ul>
 </div>
 </body>
 </html>
+
+
+
