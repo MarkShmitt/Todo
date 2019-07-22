@@ -17,7 +17,8 @@
 <body>
 
 <div class="header">It will be verification and registration users, and synchronization with calendar.<br>
-    To be continued...</div>
+    To be continued...
+</div>
 
 <div class="container">
     <form action="insert" method="post">
