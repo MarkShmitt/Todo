@@ -1,6 +1,6 @@
 /* Basic Style */
 body {
-    background-image: url("/web/bg.jpg");
+    background-image: url('bg.jpg');
     color: #333;
 }
 
