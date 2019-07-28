@@ -5,7 +5,7 @@
   Time: 21:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language='java' contentType='text/html; charset=UTF-8' pageEncoding='UTF-8'%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
@@ -23,7 +23,7 @@
 <div class="container">
     <form action="insert" method="post">
         <label for="new-task">Add Item</label>
-        <input id="new-task" type="text" name="title">
+        <input id="new-task" type="text" name="title" required>
         <button type="submit">Add</button>
     </form>
 
@@ -35,7 +35,7 @@
                     <form action="update" method="post">
                         <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
                         <input type="checkbox" name="completeFlag" value="true"/>
-                        <input type="text" name="title" value="<c:out value="${task.title}" />" />
+                        <input type="text" name="title" value="<c:out value="${task.title}" />" required/>
                         <label><c:out value="${task.title}" /></label>
                         <button class="edit" type="submit">Edit</button>
                     </form>
@@ -56,7 +56,7 @@
                     <form action="update" method="post">
                         <input type="hidden" name="id" value="<c:out value='${task.id}' />" />
                         <input type="checkbox" name="completeFlag" value="true" checked/>
-                        <input type="text" name="title" value="<c:out value="${task.title}" />" />
+                        <input type="text" name="title" value="<c:out value="${task.title}" />" required/>
                         <label><c:out value="${task.title}" /></label>
                         <button class="edit" type="submit">Edit</button>
                     </form>

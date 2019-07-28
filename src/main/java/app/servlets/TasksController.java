@@ -33,6 +33,9 @@ public class TasksController extends HttpServlet {
             case "/update":
                 updateTask(req, resp);
                 break;
+            case "/list":
+                listTasks(req, resp);
+                break;
             default:
                 listTasks(req, resp);
                 break;

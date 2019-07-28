@@ -5,7 +5,8 @@
   Time: 17:39
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language='java' contentType='text/html; charset=UTF-8' pageEncoding='UTF-8'%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>START</title>
@@ -14,13 +15,12 @@
     </style>
 </head>
 <body>
-
 <div class="header">It will be verification and registration users, and synchronization with calendar.<br>
     To be continued...
 </div>
 
 <div class="container">
-    <form action="insert" method="post">
+    <form action="list" method="post">
         <button type="submit">Let's GO!!!</button>
     </form>
 </div>

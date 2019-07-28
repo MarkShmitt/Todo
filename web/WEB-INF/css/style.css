@@ -1,8 +1,17 @@
 /* Basic Style */
 body {
-    background-image: url("/bg.jpg");
+    background-image: url("bg.jpg");
     color: #333;
 }
+
+form[action=update] {
+    width: 80%;
+}
+
+form[action=delete] {
+    width: 20%;
+}
+
 .header {
     display: block;
     height: 70px;
@@ -14,7 +23,7 @@ body {
 }
 .container {
     display: block;
-    width: 400px;
+    width: 40%;
     margin: 20px auto 0;
     border-radius: 2rem;
     background: #fff;
@@ -80,7 +89,7 @@ label[for='new-task'] {
 }
 input#new-task {
     float: left;
-    width: 318px;
+    width: 80%;
 }
 p > a, button:hover {
     color: #0FC57C;
@@ -100,11 +109,11 @@ li > input[type="checkbox"] {
 li > label {
     font-size: 18px;
     line-height: 40px;
-    width: 237px;
+    width: 100%;
     padding: 0 0 0 11px;
 }
 li >  input[type="text"] {
-    width: 226px;
+    width: 100%;
 }
 li form > .delete:hover {
     color: #CF2323;
@@ -114,8 +123,8 @@ li form > .delete:hover {
 #completed-tasks label {
     font-size: 18px;
     line-height: 40px;
-    width: 237px;
-    padding: 0 0 0 11px;
+    width: 76%;
+    padding: 0 0 0 10px;
     text-decoration: line-through;
     color: #888;
 }
@@ -126,7 +135,8 @@ ul li input[type=text] {
 }
 
 ul li.editMode input[type=text] {
-    display:block;
+    display:inline;
+    width: 80%;
 }
 
 ul li.editMode label {

@@ -6,13 +6,53 @@
 
     <!-- add servlet -->
     <servlet>
-        <servlet-name>TasksController</servlet-name>
-        <servlet-class>app.servlets.TasksController</servlet-class>
+    <servlet-name>TasksController</servlet-name>
+    <servlet-class>app.servlets.TasksController</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>TasksController</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/TasksController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>list</servlet-name>
+    <servlet-class>app.servlets.TasksController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insert</servlet-name>
+        <servlet-class>app.servlets.TasksController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>app.servlets.TasksController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>app.servlets.TasksController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update</url-pattern>
     </servlet-mapping>
 
 </web-app>
